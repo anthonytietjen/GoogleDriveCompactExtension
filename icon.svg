@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+    <!-- Folder background -->
+    <rect x="16" y="32" width="96" height="80" rx="8" fill="#4285F4"/>
+    <!-- Compact lines -->
+    <line x1="32" y1="48" x2="96" y2="48" stroke="white" stroke-width="4"/>
+    <line x1="32" y1="64" x2="96" y2="64" stroke="white" stroke-width="4"/>
+    <line x1="32" y1="80" x2="96" y2="80" stroke="white" stroke-width="4"/>
+    <line x1="32" y1="96" x2="96" y2="96" stroke="white" stroke-width="4"/>
+</svg> 
