@@ -16,36 +16,8 @@ const driveObserver = new MutationObserver((mutations, obs) => {
     }
 });
 
-// Wait for and click the "Hide side panel" button
-const sidePanelObserver = new MutationObserver((mutations, obs) => {
-    const hideSidePanelButton = document.querySelector('[aria-label="Hide side panel"]');
-    if (hideSidePanelButton) {
-        console.log('Found Hide side panel button');
-        // Find all divs and look for one with cursor: pointer
-        const divs = hideSidePanelButton.querySelectorAll('div');
-        const clickableDiv = Array.from(divs).find(div => 
-            window.getComputedStyle(div).cursor === 'pointer'
-        );
-        
-        if (clickableDiv) {
-            console.log('Found clickable div with cursor: pointer');
-            setTimeout(() => {
-                clickableDiv.click();
-            }, 5000);
-        } else {
-            console.log('No clickable div found');
-        }
-        obs.disconnect();
-    }
-});
-
 // Start both observers
 driveObserver.observe(document.body, {
-    childList: true,
-    subtree: true
-});
-
-sidePanelObserver.observe(document.body, {
     childList: true,
     subtree: true
 });
