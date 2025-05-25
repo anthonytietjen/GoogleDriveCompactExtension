@@ -1,4 +1,21 @@
+/* Compact side menu view */
 .a-U-J {
   height: auto !important;
   min-height: 0 !important;
 } 
+
+/* Compact cards view */
+.iZmuQc {
+  column-gap: 2px !important;
+  row-gap: 2px !important;
+}
+
+/* Storage limit warning */
+.Wmhurf {
+  display: none !important;
+}
+
+/* New button area */
+.ZHllM {
+  display: none !important;
+}
